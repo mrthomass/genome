@@ -103,7 +103,7 @@ int main(int argc, char *argv[])
 
 		fseek(inpf, chromLen[thisChrom].pos + startPos, SEEK_SET);
 
-		fprintf(optf, ">%i %u\n", i + 1, thisLen);
+		fprintf(optf, ">%i:%u\n", i + 1, thisLen);
 		
 		for (int j = 0; j < thisLen; j++)
 		{
